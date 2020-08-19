@@ -1,5 +1,5 @@
 {{- $architecture := or .architecture "arm64" -}}
-{{- $debug := or .debug "on" -}}
+{{- $debug := or .debug "off" -}}
 {{- $imagesuffix := or .imagesuffix "-edge" -}}
 
 architecture: {{ $architecture }}
