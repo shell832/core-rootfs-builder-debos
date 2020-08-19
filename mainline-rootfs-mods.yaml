@@ -8,7 +8,7 @@ actions:
     description: Adding mods overlay
     destination: /
 
-{{ if eq $debug "on" }}
+{{ if eq $debug "off" }}
   - action: run
     chroot: true
     description: Setting password on phablet user
