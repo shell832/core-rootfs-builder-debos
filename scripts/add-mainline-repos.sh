@@ -8,7 +8,7 @@ export DEBIAN_FRONTEND=noninteractive
 export DEBCONF_NONINTERACTIVE_SEEN=true
 
 #echo "deb http://repo.ubports.com/ bionic_-_edge_-_mesa main" >> /etc/apt/sources.list.d/ubports.list
-echo "deb http://repo.ubports.com/ xenial_-_edge_-_pine main" >> /etc/apt/sources.list.d/ubports.list
+echo "deb http://repo.ubports.com/ bionic main" >> /etc/apt/sources.list.d/ubports.list
 echo "deb http://repo.ubports.com/ bionic_-_xwayland main" >> /etc/apt/sources.list.d/ubports.list
 
 #echo "" >> /etc/apt/preferences.d/ubports.pref
@@ -17,16 +17,16 @@ echo "deb http://repo.ubports.com/ bionic_-_xwayland main" >> /etc/apt/sources.l
 #echo "Pin: release o=UBports,a=bionic_-_edge_-_mesa" >> /etc/apt/preferences.d/ubports.pref
 #echo "Pin-Priority: 2001" >> /etc/apt/preferences.d/ubports.pref
 
-echo "" >> /etc/apt/preferences.d/ubports.pref
-echo "Package: *" >> /etc/apt/preferences.d/ubports.pref
-echo "Pin: origin repo.ubports.com" >> /etc/apt/preferences.d/ubports.pref
-echo "Pin: release o=UBports,a=xenial_-_edge_-_pine" >> /etc/apt/preferences.d/ubports.pref
-echo "Pin-Priority: 2002" >> /etc/apt/preferences.d/ubports.pref
+#echo "" >> /etc/apt/preferences.d/ubports.pref
+#echo "Package: *" >> /etc/apt/preferences.d/ubports.pref
+#echo "Pin: origin repo.ubports.com" >> /etc/apt/preferences.d/ubports.pref
+#echo "Pin: release o=UBports,a=xenial_-_edge_-_pine" >> /etc/apt/preferences.d/ubports.pref
+#echo "Pin-Priority: 2002" >> /etc/apt/preferences.d/ubports.pref
 
 echo "" >> /etc/apt/preferences.d/ubports.pref
 echo "Package: *" >> /etc/apt/preferences.d/ubports.pref
 echo "Pin: origin repo.ubports.com" >> /etc/apt/preferences.d/ubports.pref
-echo "Pin: release o=UBports,a=bionic_-xwayland" >> /etc/apt/preferences.d/ubports.pref
+echo "Pin: release o=UBports,a=bionic_-_xwayland" >> /etc/apt/preferences.d/ubports.pref
 echo "Pin-Priority: 2002" >> /etc/apt/preferences.d/ubports.pref
 
 apt update
