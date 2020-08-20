@@ -7,7 +7,7 @@ actions:
   - action: download
     description: Download latest ubuntu touch rootfs from CI
     #url: "https://ci.ubports.com/job/xenial-mainline{{ $imagesuffix }}-rootfs-{{ $architecture }}/lastSuccessfulBuild/artifact/out/ubuntu-touch-xenial{{ $imagesuffix }}-{{ $architecture }}-rootfs.tar.gz"
-    url: "http://cdimage.ubuntu.com/ubuntu-base/daily/pending/groovy-base-arm64.tar.gz"
+    url: "http://cdimage.ubuntu.com/ubuntu-base/bionic/daily/pending/bionic-base-arm64.tar.gz"
     unpack: false
     filename: ut-rootfs.tar.gz
     name: ut-rootfs.tar.gz
