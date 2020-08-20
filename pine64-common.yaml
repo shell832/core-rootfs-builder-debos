@@ -20,7 +20,9 @@ actions:
 
   - action: download
     description: Fetch latest kernel ci build
-    url: https://gitlab.com/pine64-org/linux/-/jobs/artifacts/megi-kernel-5.8/download?job=build
+    #url: https://gitlab.com/pine64-org/linux/-/jobs/artifacts/megi-kernel-5.8/download?job=build
+    #url: https://gitlab.com/pine64-org/linux/-/archive/megi-kernel-5.8/linux-megi-kernel-5.8.tar.bz2
+    url: https://gitlab.com/pine64-org/linux/-/jobs/artifacts/pine64-kernel-ubports-5.7.y/download?job=build
     name: kernel
     filename: kernel.zip
     unpack: true
