@@ -22,9 +22,10 @@ actions:
     description: Fetch latest kernel ci build
     #url: https://gitlab.com/pine64-org/linux/-/jobs/artifacts/megi-kernel-5.8/download?job=build
     #url: https://gitlab.com/pine64-org/linux/-/archive/megi-kernel-5.8/linux-megi-kernel-5.8.tar.bz2
-    url: https://gitlab.com/pine64-org/linux/-/archive/pine64-kernel-ubports-5.7.y/linux-pine64-kernel-ubports-5.7.y.tar.bz2
+    url: https://gitlab.com/pine64-org/linux/-/archive/pine64-kernel-ubports-5.7.y/linux-pine64-kernel-ubports-5.7.y.zip
+    
     name: kernel
-    filename: kernel
+    filename: kernel.zip
     unpack: true
     compression: zip
 
@@ -59,7 +60,7 @@ actions:
     source: .
     destination: /var/tmp/
 
-{{ if eq $debug "on" }}
+{{ if eq $debug "off" }}
   - action: run
     chroot: true
     description: Installing kernel on rootfs (with debug packages)
