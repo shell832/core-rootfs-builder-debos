@@ -24,7 +24,7 @@ actions:
     #url: https://gitlab.com/pine64-org/linux/-/archive/megi-kernel-5.8/linux-megi-kernel-5.8.tar.bz2
     url: https://gitlab.com/pine64-org/linux/-/archive/pine64-kernel-ubports-5.7.y/linux-pine64-kernel-ubports-5.7.y.tar.bz2
     name: kernel
-    filename: kernel.zip
+    filename: kernel
     unpack: true
     compression: zip
 
